@@ -1,0 +1,8 @@
+data/docker/containers/code-server/config/*
+!data/docker/containers/code-server/config/.keep
+
+data/docker/containers/code-server/local/*
+!data/docker/containers/code-server/local/.keep
+
+data/docker/containers/code-server/config/*
+!data/docker/containers/code-server/config/.keep

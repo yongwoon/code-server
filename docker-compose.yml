@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  code-server:
+    container_name: code-server
+    image: codercom/code-server:latest
+    restart: unless-stopped
+    environment:
+      PASSWORD: "welcomeYongwoonCodeServer"
+    ports:
+      - 8080:8080
+    volumes:
+      - ./data/docker/containers/code-server/local:/root/.local
+      - ./data/docker/containers/code-server/config:/root/.config
+      - ./data/docker/containers/code-server/project:/home/coder/project
